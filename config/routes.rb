@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
+  get 'site/index'
   mount Sidekiq::Web => "/sidekiq" if defined?(Sidekiq) && defined?(Sidekiq::Web)
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  # config/routes.rb
+  get '/home', to: 'pages#home'
+  get '/react', to: 'pages#react'
 end
