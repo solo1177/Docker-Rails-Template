@@ -4,11 +4,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= javascript_pack_tag 'HelloMessage'%>
   </head>
 
   <body>
     <h1>こんにちは</h1>
-    <div id="hello"></div>
+    <div id="react-root">
+  <!-- Reactコンポーネントがここに挿入されます -->
+</div>
+    <%= javascript_pack_tag 'HelloMessage'%>
+
   </body>
 </html>
