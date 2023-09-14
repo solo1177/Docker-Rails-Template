@@ -3,6 +3,6 @@ class PagesController < ApplicationController
   def home 
     @users=User.all 
   end 
-  def react 
+  def page1
   end 
 end

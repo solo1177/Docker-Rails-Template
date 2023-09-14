@@ -10,6 +10,11 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
+.btn{
+    width: 200px;
+    height: 60px;
+    background-color:#00ff99;
+}
 
 .context {
     width: 100%;
